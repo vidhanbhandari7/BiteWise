@@ -7,6 +7,8 @@ function App() {
       <Navbar/>
       <HeroSection/>
       <Footer/>
+      /*hello
+      **/
     </div>
   )
 }
