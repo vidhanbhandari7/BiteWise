@@ -1,5 +1,5 @@
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-
+import BiteWiseHeader from '../components/BiteWiseHeader';
 const data = [
   { day: 'Sun', calories: 0 },
   { day: 'Mon', calories: 900 },
@@ -10,8 +10,12 @@ const data = [
   { day: 'Sat', calories: 0 },
 ];
 
+
 export default function AnalyticsDashboard() {
+  
   return (
+    <div>
+      <BiteWiseHeader/>
     <div className="p-6 bg-[#fff8f4] min-h-screen text-[#2c2c2c]">
       <h1 className="text-2xl font-bold mb-2">Analytics</h1>
       <p className="mb-6 text-sm">View insights and trends from your nutrition journey</p>
@@ -52,6 +56,7 @@ export default function AnalyticsDashboard() {
         <p className="text-sm text-gray-500">Average Daily Calories</p>
         <p className="text-lg font-bold text-orange-700">159 cal</p>
       </div>
+    </div>
     </div>
   );
 }

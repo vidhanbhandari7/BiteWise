@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts";
+import BiteWiseHeader from "../components/BiteWiseHeader";
 
 const MealTracker = () => {
   const [mealDescription, setMealDescription] = useState("");
@@ -137,7 +138,9 @@ const MealTracker = () => {
   };
 
   return (
-    <div className='max-w-6xl mx-auto p-6 bg-orange-50 min-h-screen font-poppins'>
+  <div>
+    <BiteWiseHeader/>
+    <div className='mt-4 max-w-6xl mx-auto p-6 bg-orange-50 min-h-screen font-poppins'>
       <h1 className='text-2xl font-bold text-gray-800 mb-1'>Track Meals</h1>
       <p className='text-gray-500 text-sm mb-6'>
         Log your meals and track your daily nutrition progress
@@ -384,7 +387,7 @@ const MealTracker = () => {
                 className='p-4 border border-gray-100 rounded-lg flex justify-between'
               >
                 <div>
-                  <span className='block'>{meal.description}</span>
+                  <span className='block'>🍽️{meal.description}</span>
                   <span className='text-sm text-gray-500'>
                     {meal.calories} calories | {meal.protein}g protein |{" "}
                     {meal.fats}g fats | {meal.carbs}g carbs
@@ -395,6 +398,7 @@ const MealTracker = () => {
           </div>
         )}
       </div>
+    </div>
     </div>
   );
 };

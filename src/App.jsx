@@ -12,6 +12,7 @@ import ResultPage from "./pages/ResultPage";
 import SettingsPage from "./pages/SettingsPage";
 import MealTracker from "./pages/MealTracker";
 import NutritionAnalytics from "./pages/NutritionAnalytics";
+import BiteWiseHeader from "./components/BiteWiseHeader";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path='/SettingsPage' element={<SettingsPage />} />
         <Route path='/MealTracker' element={<MealTracker />} />
         <Route path='/NutritionAnalytics' element={<NutritionAnalytics />} />
+        <Route path='/BiteWiseHeader' element={<BiteWiseHeader />} />
       </Routes>
     </Router>
   );
