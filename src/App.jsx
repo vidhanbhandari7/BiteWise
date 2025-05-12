@@ -4,6 +4,9 @@ import SignIn from "./pages/SignIn"
 import SignUp from "./pages/SignUp";
 import WelcomePage from "./pages/WelcomePage";
 import ResultPage from "./pages/ResultPage";
+import SettingsPage from "./pages/SettingsPage";
+import MealTracker from "./pages/MealTracker";
+import NutritionAnalytics from "./pages/NutritionAnalytics";
 function App() {
 return (
   <Router>
@@ -13,6 +16,10 @@ return (
       <Route path="/SignIn" element={<SignIn/>}/>
       <Route path="/WelcomePage" element={<WelcomePage/>}/>
       <Route path="/ResultPage" element={<ResultPage/>}/>
+      <Route path="/SettingsPage" element={<SettingsPage/>}/>
+      <Route path="/MealTracker" element={<MealTracker/>}/>
+      <Route path="/NutritionAnalytics" element={<NutritionAnalytics/>}/>
+
 
 
     </Routes>
